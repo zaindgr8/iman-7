@@ -1203,6 +1203,28 @@
   color: #ffffff;
   font-size: 60px;
 }
+.elementor-544 .elementor-element.elementor-element-78934791 > .elementor-container {
+    min-height: 700px;
+}
+.elementor-544 .elementor-element.elementor-element-78934791 > .elementor-container:after {
+    content: "";
+    min-height: inherit;
+}
+.elementor-544 .elementor-element.elementor-element-78934791:not(.elementor-motion-effects-element-type-background),
+.elementor-544 .elementor-element.elementor-element-78934791 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-image: url("../upload/car.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.elementor-544 .elementor-element.elementor-element-78934791 > .elementor-background-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.elementor-544 .elementor-element.elementor-element-78934791 {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
 .elementor-204 .elementor-element.elementor-element-a29b869 {
   text-align: center;
 }
@@ -4500,8 +4522,11 @@
 .elementor-785
   .elementor-element.elementor-element-3819d2cc
   > .elementor-container {
-  min-height: 200px;
+  min-height: 300px;
 }
+
+
+
 .elementor-785
   .elementor-element.elementor-element-3819d2cc
   > .elementor-container:after {
@@ -4516,7 +4541,7 @@
   .elementor-element.elementor-element-3819d2cc
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer {
-  
+    background-image: url("../upload/about-cover.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
