@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .align-items-center {
+            display: flex;
+            align-items: center;
+        }
+        .d-flex {
+            display: flex;
+        }
+        .hero-header {
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        .video, .gif {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .video {
+            display: none;
+        }
+        .gif {
+            display: block;
+        }
+        @media (min-width: 768px) {
+            .video {
+                display: block;
+            }
+            .gif {
+                display: none;
+            }
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            text-align: center;
+        }
+        .text-white {
+            color: white;
+        }
+        .font-bold {
+            font-weight: bold;
+        }
+        .text-5xl {
+            font-size: 3rem; /* Adjust size as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="align-items-center d-flex hero-header">
+        <!-- Start Oblique -->
+        <div class="video-container">
+            <video
+                autoPlay
+                muted
+                loop
+                src="/assets/img/video.mp4"
+                class="h-100 object-fit-cover position-absolute w-100 oblique-image top-0 video"
+                preload="metadata"
+            ></video>
+            <img
+                src="/assets/img/Website.gif"
+                alt="Hero GIF"
+                class="object-cover position-absolute w-100 oblique-image top-0 gif"
+            />
+        </div>
+        <!-- /.End Oblique -->
+        <div class="container">
+            <div>
+                <h1 class="text-white font-bold text-5xl">
+                    <span>Unlock The Door <br /> To Your Dream Home</span>
+                </h1>
+                <!-- Start Main Search Content -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
